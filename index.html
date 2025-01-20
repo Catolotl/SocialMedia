@@ -8,8 +8,24 @@
 </head>
 <body>
   <div id="app">
-    <div id="posts"></div>
-    <div id="loading">Loading...</div>
+    <!-- Login / Signup form -->
+    <div id="auth-form">
+      <h2>Login / Sign Up</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button id="login-btn">Log In</button>
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Posts section (hidden initially) -->
+    <div id="post-section" style="display: none;">
+      <div id="create-post">
+        <textarea id="new-post-content" placeholder="Write a new post..."></textarea>
+        <button id="create-post-btn">Create Post</button>
+      </div>
+      <div id="posts"></div>
+      <div id="loading">Loading...</div>
+    </div>
   </div>
 
   <!-- Include Supabase CDN before your custom script -->
